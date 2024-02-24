@@ -4,7 +4,7 @@
 
 substitutions:
   log_level: INFO
-  timezone: Asia/Ho_Chi_Minh
+  timezone: "Asia/Ho_Chi_Minh"
   # timezone: "America/Mexico_City"
 
 # Enable logging via network and disable serial port
