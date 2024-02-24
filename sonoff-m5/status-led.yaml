@@ -12,7 +12,7 @@ light:
       number: GPIO05
       inverted: true
       ignore_strapping_warning: true
-    internal: true
+    internal: false
     restore_mode: RESTORE_DEFAULT_ON
 
 binary_sensor:
@@ -21,7 +21,7 @@ binary_sensor:
   - platform: template
     name: "API connected"
     id: sensor_api_connected
-    internal: false
+    internal: true
     entity_category: 'diagnostic'
     device_class: 'connectivity'
     lambda: return global_api_server->is_connected();
