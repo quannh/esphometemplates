@@ -22,7 +22,7 @@ binary_sensor:
 
 # Enable OTA
 ota:
-  safe_mode: true
+  safe_mode: false
   password: "${ota_password}"
 
 # Enable WiFi and AP for captive portal
