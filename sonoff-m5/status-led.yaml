@@ -21,7 +21,7 @@ binary_sensor:
   - platform: template
     name: "API connected"
     id: sensor_api_connected
-    internal: true
+    internal: false
     entity_category: 'diagnostic'
     device_class: 'connectivity'
     lambda: return global_api_server->is_connected();
