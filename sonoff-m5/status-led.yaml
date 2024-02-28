@@ -26,6 +26,14 @@ binary_sensor:
     device_class: 'connectivity'
     lambda: return global_api_server->is_connected();
     on_press:
-      - light.turn_off: led_status
+      - if:
+          condition:
+            switch.is_on: den_bao_ket_noi_api_switch
+          then:
+            - light.turn_off: led_status
     on_release:
-      - light.turn_on: led_status
+      - if:
+          condition:
+            switch.is_on: den_bao_ket_noi_api_switch
+          then:
+            - light.turn_on: led_status
